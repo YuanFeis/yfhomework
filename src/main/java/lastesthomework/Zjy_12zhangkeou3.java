@@ -1,3 +1,5 @@
+package lastesthomework;
+
 import java.io.FileOutputStream;
 
 public class Zjy_12zhangkeou3 {

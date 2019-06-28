@@ -1,3 +1,4 @@
+package lastesthomework;
 
 public class Zjy_12kehou7 {
 	static int res;

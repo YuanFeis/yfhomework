@@ -1,3 +1,5 @@
+package lastesthomework;
+
 import java.io.FileInputStream;
 
 

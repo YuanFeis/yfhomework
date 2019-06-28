@@ -1,3 +1,4 @@
+package lastesthomework;
 
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -9,14 +10,10 @@ import javax.swing.JPanel;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.BufferedReader;
-import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JMenuBar;
@@ -28,7 +25,7 @@ import javax.swing.JLabel;
 public class Zjy_Paint {
 
 	private JFrame frmYfpaint;
-	private String tuxing = "Ô²ÐÎ";
+	private String tuxing = "Ô²ï¿½ï¿½";
 	private Color c = Color.RED; 
 	
 	
@@ -78,7 +75,7 @@ public class Zjy_Paint {
 		JLabel disxy = new JLabel("\u201C\u8FD9\u662F\u4E00\u4E2A\u70B9\u51FB\u9762\u677F\u4EA7\u751F\u56FE\u5F62\u7684\u5C0F\u7A0B\u5E8F\uFF0C\u4F60\u53EF\u4EE5\u5728\u4E0A\u65B9\u83DC\u5355\u8FDB\u884C\u76F8\u5173\u753B\u56FE\u9009\u62E9\u201D");
 		disxy.setBackground(Color.DARK_GRAY);
 		disxy.setForeground(Color.MAGENTA);
-		disxy.setFont(new Font("·½ÕýÊæÌå", Font.BOLD, 28));
+		disxy.setFont(new Font("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 28));
 		disxy.setBounds(0, 50, 10000, 50);
 		frmYfpaint.getContentPane().add(disxy);
 		
@@ -95,7 +92,7 @@ public class Zjy_Paint {
 		yuan.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				tuxing="Ô²ÐÎ";
+				tuxing="Ô²ï¿½ï¿½";
 			}
 		});
 		mnNewMenu.add(yuan);
@@ -104,7 +101,7 @@ public class Zjy_Paint {
 		jvxing.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				tuxing="¾ØÐÎ";
+				tuxing="ï¿½ï¿½ï¿½ï¿½";
 			}
 		});
 		mnNewMenu.add(jvxing);
@@ -113,7 +110,7 @@ public class Zjy_Paint {
 		sanjiao.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				tuxing="Èý½ÇÐÎ";
+				tuxing="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
 			}
 		});
 		mnNewMenu.add(sanjiao);
@@ -122,7 +119,7 @@ public class Zjy_Paint {
 		zhengfang.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				tuxing="Õý·½ÐÎ";
+				tuxing="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
 			}
 		});
 		mnNewMenu.add(zhengfang);
@@ -179,7 +176,7 @@ public class Zjy_Paint {
 		mngraphtxt.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				disxy.setText("Äã¸Õ²Åµã»÷ÁË²é¿´Êý¾Ý²Ëµ¥Ïî£¬ÏÂÃæÎªÄãÏÔÊ¾µÄÊÇÏà¹ØÎÄ¼þgraph.txtÏÂµÄÎÄ¼þ");
+				disxy.setText("ï¿½ï¿½Õ²Åµï¿½ï¿½ï¿½Ë²é¿´ï¿½ï¿½ï¿½Ý²Ëµï¿½ï¿½î£¬ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½graph.txtï¿½Âµï¿½ï¿½Ä¼ï¿½");
 				int yiwei=20;
 				Graphics g = panel.getGraphics();
 				g.clearRect(0, 0, 100000, 100000);
@@ -208,7 +205,7 @@ public class Zjy_Paint {
 				} catch (Exception e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
-				JOptionPane.showMessageDialog(null, "Î´ÕÒµ½Ïà¹ØÎÄ¼þ£¬¿ÉÄÜÊ±Äã»¹Ã»µã»÷ÏÂÃæÃæ°å£¬Ã»²úÉúÏà¹Ø×ø±êµ¼ÖÂµÄ¡£", "´íÎóÌáÊ¾",JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null, "Î´ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ã»¹Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å£¬Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½êµ¼ï¿½ÂµÄ¡ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾",JOptionPane.ERROR_MESSAGE);
 				}
 			}
 		});
@@ -225,7 +222,7 @@ public class Zjy_Paint {
 				} catch (Exception e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
-				JOptionPane.showMessageDialog(null, "Î´ÕÒµ½Ïà¹ØÎÄ¼þ£¬¿ÉÄÜÊ±Äã»¹Ã»µã»÷ÏÂÃæÃæ°å£¬Ã»²úÉúÏà¹Ø×ø±êµ¼ÖÂµÄ¡£", "´íÎóÌáÊ¾",JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null, "Î´ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ã»¹Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å£¬Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½êµ¼ï¿½ÂµÄ¡ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾",JOptionPane.ERROR_MESSAGE);
 				}
 			}
 		});
@@ -245,19 +242,19 @@ public class Zjy_Paint {
 				x = e.getX();
 				y = e.getY();
 				count++;
-				disxy.setText("ÕâÊÇÄãµÚ "+count+" ´Îµã»÷Ãæ°å£¬µã»÷µÄ×ø±êÎª£º x = "+x+" y= "+y+" ¡£");
-				if("Ô²ÐÎ".equals(tuxing)) {
+				disxy.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "+count+" ï¿½Îµï¿½ï¿½ï¿½ï¿½å£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ x = "+x+" y= "+y+" ï¿½ï¿½");
+				if("Ô²ï¿½ï¿½".equals(tuxing)) {
 					list.add("The " + count + " data written is x= " + x + "  y= " + y + " Draw a circle. \n");
-					System.out.println("µÚ" + count + "´ÎµÄÊý¾ÝÎª" + x + "," + y + "»­ÁËÒ»¸öÔ²");
+					System.out.println("ï¿½ï¿½" + count + "ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½Îª" + x + "," + y + "ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ô²");
 					Graphics g = panel.getGraphics();
 					g.setColor(c);
 					g.clearRect(0, 0, 10000, 10000);
 					g.drawOval(x, y, 100, 100);
 				    YfWrite(list);
 				}
-				if("¾ØÐÎ".equals(tuxing)) {
+				if("ï¿½ï¿½ï¿½ï¿½".equals(tuxing)) {
 					list.add("The " + count + " data written is x= " + x + "  y= " + y + " Draw a rectangle. \n");
-					System.out.println("µÚ" + count + "´ÎµÄÊý¾ÝÎª" + x + "," + y + "»­ÁËÒ»¸ö¾ØÐÎ");
+					System.out.println("ï¿½ï¿½" + count + "ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½Îª" + x + "," + y + "ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 					Graphics g = panel.getGraphics();
 					g.setColor(c);
 					g.clearRect(0, 0, 10000, 10000);
@@ -265,9 +262,9 @@ public class Zjy_Paint {
 				    YfWrite(list);
 					
 				}
-				if("Èý½ÇÐÎ".equals(tuxing)) {
+				if("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½".equals(tuxing)) {
 					list.add("The " + count + " data written is x= " + x + "  y= " + y + " Draw a triangle. \n");
-					System.out.println("µÚ" + count + "´ÎµÄÊý¾ÝÎª" + x + "," + y + "»­ÁËÒ»¸öÈý½ÇÐÎ");
+					System.out.println("ï¿½ï¿½" + count + "ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½Îª" + x + "," + y + "ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 					Graphics g = panel.getGraphics();
 					g.setColor(c);
 					g.clearRect(0, 0, 10000, 10000);
@@ -276,9 +273,9 @@ public class Zjy_Paint {
 					g.drawPolygon(x1, y1, 3);
 				    YfWrite(list);
 				}
-				if("Õý·½ÐÎ".equals(tuxing)) {
+				if("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½".equals(tuxing)) {
 					list.add("The " + count + " data written is x= " + x + "  y= " + y + " Draw a squrae. \n");
-					System.out.println("µÚ" + count + "´ÎµÄÊý¾ÝÎª" + x + "," + y + "»­ÁËÒ»¸öÕý·½ÐÎ");
+					System.out.println("ï¿½ï¿½" + count + "ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½Îª" + x + "," + y + "ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 					Graphics g = panel.getGraphics();
 					g.setColor(c);
 					g.clearRect(0, 0, 10000, 10000);
@@ -317,7 +314,7 @@ public class Zjy_Paint {
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
-		JOptionPane.showMessageDialog(null, "ÎÞ·¨Ð´Èëµ½Ïà¹ØÎÄ¼þ£¬ÇëÄã¼ì²éÄãµÄÏà¹Ø»·¾³¡£", "´íÎóÌáÊ¾",JOptionPane.ERROR_MESSAGE);
+		JOptionPane.showMessageDialog(null, "ï¿½Þ·ï¿½Ð´ï¿½ëµ½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø»ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾",JOptionPane.ERROR_MESSAGE);
 		}
 	}
 	public List<String> YfRead() {
@@ -338,7 +335,7 @@ public class Zjy_Paint {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			 JOptionPane.showMessageDialog(null, "Î´ÕÒµ½Ïà¹ØÎÄ¼þ£¬¿ÉÄÜÊ±Äã»¹Ã»µã»÷ÏÂÃæÃæ°å£¬Ã»²úÉúÏà¹Ø×ø±êµ¼ÖÂµÄ¡£", "´íÎóÌáÊ¾",JOptionPane.ERROR_MESSAGE);
+			 JOptionPane.showMessageDialog(null, "Î´ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ã»¹Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å£¬Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½êµ¼ï¿½ÂµÄ¡ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾",JOptionPane.ERROR_MESSAGE);
 		}
 		return list;
 		
